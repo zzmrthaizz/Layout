@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingLeft="15pt"
+    android:paddingRight="15pt"
+    android:weightSum="3" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="vertical" >
+
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:src="@drawable/artwork" />
+	</LinearLayout>
+
+	<LinearLayout 
+	    android:layout_weight="1"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:orientation="vertical"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="JFOREST"
+	        android:textSize="25sp"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="Raise your idea and vote it"/>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="bottom"
+	        android:weightSum="10"
+	        >
+	        <EditText 
+	            android:layout_weight="8"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:hint="Nhap # ma phong"/>
+	        <ImageButton 
+	            android:layout_weight="2"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:scaleType="fitEnd"
+	            android:adjustViewBounds="true"
+	            android:background="@null"
+	            android:src="@drawable/ok_button"/>
+	    </LinearLayout>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_weight="1"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:orientation="vertical"
+	    android:descendantFocusability="blocksDescendants">
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:weightSum="10">
+	        <ImageButton 
+	            android:layout_weight="2"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:background="@null"
+	            android:scaleType="fitCenter"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/share_fb_button"/>
+	        <TextView 
+	            android:layout_weight="8"
+	            android:layout_width="0dp"
+	            android:layout_marginTop="15dp"
+	            android:layout_height="45.5dp"
+	            android:background="#5575BA"
+	            android:textSize="15sp"
+	            android:textColor="#FFFFFF"
+	            android:gravity="left|center_vertical"
+	            android:text="Dang nhap bang facebook"/>
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:weightSum="10"
+	        android:gravity="center"
+	        >
+	        <ImageButton 
+	            android:layout_weight="2"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:background="@null"
+	            android:scaleType="fitCenter"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/share_google_button"/>
+	        <TextView 
+	            android:layout_weight="8"
+	            android:layout_width="0dp"
+	            android:layout_height="45.5dp"
+	            android:gravity="left|center_vertical"
+	            android:background="#DB4A39"
+	            android:textSize="15sp"
+	            android:textColor="#FFFFFF"
+	            android:text="Dang nhap bang google"/>	        
+	    </LinearLayout>
+	</LinearLayout>
+
+
+</LinearLayout>
