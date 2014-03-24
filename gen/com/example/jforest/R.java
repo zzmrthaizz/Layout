@@ -28,19 +28,23 @@ public final class R {
         public static final int ok=0x7f020004;
         public static final int ok_button=0x7f020005;
         public static final int ok_pressed=0x7f020006;
-        public static final int share_fb=0x7f020007;
-        public static final int share_fb_button=0x7f020008;
-        public static final int share_fb_pressed=0x7f020009;
-        public static final int share_google=0x7f02000a;
-        public static final int share_google_button=0x7f02000b;
-        public static final int share_google_pressed=0x7f02000c;
-        public static final int vote_button=0x7f02000d;
-        public static final int vote_up=0x7f02000e;
-        public static final int voted_up=0x7f02000f;
+        public static final int shape_jforest_edittext=0x7f020007;
+        public static final int share_fb=0x7f020008;
+        public static final int share_fb_button=0x7f020009;
+        public static final int share_fb_pressed=0x7f02000a;
+        public static final int share_google=0x7f02000b;
+        public static final int share_google_button=0x7f02000c;
+        public static final int share_google_pressed=0x7f02000d;
+        public static final int vote_button=0x7f02000e;
+        public static final int vote_up=0x7f02000f;
+        public static final int voted_up=0x7f020010;
     }
     public static final class id {
-        public static final int action_settings=0x7f080002;
+        public static final int action_settings=0x7f080005;
         public static final int editText1=0x7f080001;
+        public static final int ll_facebook=0x7f080003;
+        public static final int ll_google_plus=0x7f080004;
+        public static final int textview_app_name=0x7f080002;
         public static final int vote=0x7f080000;
     }
     public static final class layout {

@@ -6,29 +6,41 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-	
+	LinearLayout facebookLayout;
+	LinearLayout googlePlusLayout;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-//		final ImageView vote = (ImageView) findViewById(R.id.vote);
-//		
-//		vote.setOnClickListener(new OnClickListener() {
-//			
-//			@Override
-//			public void onClick(View vote) {
-//				if (vote.isActivated()) {
-//					vote.setActivated(false);
-//				}
-//				else {
-//					vote.setActivated(true);
-//				}
-//			}
-//		});
+
+		facebookLayout = (LinearLayout) findViewById(R.id.ll_facebook);
+		googlePlusLayout = (LinearLayout) findViewById(R.id.ll_google_plus);
+
+		facebookLayout.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(MainActivity.this, "onClick facebookLayout",
+						Toast.LENGTH_SHORT).show();
+			}
+		});
+
+		googlePlusLayout.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(MainActivity.this, "onClick googlePlusLayout",
+						Toast.LENGTH_SHORT).show();
+			}
+		});
+
 	}
 
 	@Override
